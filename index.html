@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAIJA | HOME</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <!-- staija font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@900&family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<style>
+  .lexend_deca {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.logo{
+    background-image: url('img/logo.jpg');
+  }
+
+  .staija{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-stroke: 0.1px #fff;
+}
+</style>
+
+<body class=" bg-gradient-to-b from-[#3a3680] via-purple-500 to-sky-500 lexend_deca relative">
+
+    <!-- header beginning  -->
+  <header class="transition-all sticky-header sticky duration-300 ease-in-out z-50 !bg-[#3a3680]/[75] text-white">
+    <div class="container mx-auto flex justify-between items-center py-0 px-0 transition-all duration-300 ease-in-out">
+      <div class="container mx-auto flex justify-between items-center py-4 px-6 border-b-2 border-emerald-500">
+        <!-- staija logo -->
+        <div class="bg-gradient-to-r from-[#836CFA] to-[#5FDBE7] text-black rounded-full p-2 mt-2 mr-2">
+          <a href="./index.html"> <span class="staija text-black md:pl-[10%] lg:pl-0"> STAIJA</span></a>
+        </div>
+        <nav>
+            <ul class="hidden lg:flex lg:space-x-6 lg:text-sm">
+                <li><a href="./dynamerge.html" class="hover:text-teal-400">STAIJA DYNAMERGE</a></li>
+                <li><a href="./stepup.html" class="hover:text-teal-400">STEPUP SCHOLAR</a></li>
+                <li><a href="./intern.html" class="hover:text-teal-400">INTERNSHIP</a></li>
+                <li><a href="./partner.html" class="hover:text-teal-400">PARTNER WITH US</a></li>
+            </ul>
+        </nav>
+        <div class="hidden lg:flex lg:space-x-4">
+          <button class="border border-teal-400 text-gray-400 px-4 py-1 rounded hover:bg-gray-600 hover:text-white hover:shadow-[5px_5px_0px_0px_rgba(110,231,183)] transition duration-300">LOGIN</button>
+          <button class="border border-teal-400 text-gray-400 px-4 py-1 rounded hover:bg-gray-600 hover:text-white hover:shadow-[5px_5px_0px_0px_rgba(110,231,183)] transition duration-300">JOIN US</button>
+        </div>
+        <!-- hamburger -->
+        <div class="lg:hidden">
+          <button class="navbar-burger">
+              <i class="fa fa-bars text-teal-400 px-4 py-1 rounded active:bg-gray-600 active:text-white active:shadow-[5px_5px_0px_0px_rgba(110,231,183)] transition duration-300"></i>
+          </button>
+        </div>
+  
+        <!-- sidebar small screen -->      
+        <div class="navbar-menu relative z-[70] hidden">
+          <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-gradient-135 from-sky-500 via-purple-500 to-[#3a3680] border-r overflow-y-auto">
+            <div class="flex items-center mb-7">
+              <a class="mr-auto text-lg font-bold leading-none" href="#">
+                <div class="bg-gradient-to-r from-[#836CFA] w-20 to-[#5FDBE7] text-black rounded-full p-2 mt-2 mr-2">
+                  <a href="./index.html"> <span class="staija text-black md:pl-[10%] lg:pl-0"> STAIJA</span></a>
+                </div>
+              </a>
+              <button class="navbar-close">
+                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul class="divide-y divide-emerald-300/25">
+                          <li class="mb-3 ">
+                              <div class="flex justify-center space-x-4 px-4 items-center">
+                                  <button class="border border-teal-400 text-gray-400 px-4 py-1 rounded  shadow-[5px_5px_0px_0px_rgba(45,212,191)] active:shadow-none transition duration-300">LOGIN</button>
+                                  <button class="border border-teal-400 text-gray-400 px-4 py-1 rounded  shadow-[5px_5px_0px_0px_rgba(45,212,191)] active:shadow-none transition duration-300">JOIN US</button>
+                                </div>
+                          </li>
+      
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded" href="./index.html">Home</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded" href="./dynamerge.html">Staija Dynamerge</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded" href="./stepup.html">StepUp Scholar</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded" href="./intern.html">Internship</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded" href="./partner.html">Partner With Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-auto">
+              <p class="my-4 text-xs text-center text-gray-400">
+                <span>Copyright &#169; 2024</span>
+              </p>
+            </div>
+          </nav>
+        </div>
+  
+    </div>
+    </div>
+  </header>
+  <!-- header end -->
+  
+  <section class="bg-main">
+
+      <!-- star -->
+      
+      <div class="star star1 absolute top-0 left-0 w-full h-96 pointer-events-none"></div>
+      <div class="star star2 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star3 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star4 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star5 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star6 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star7 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star8 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star9 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star10 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star11 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+
+      <!-- star end -->
+
+
+
+      <!-- jumbotron beginning -->
+      <main class="mouse-targ container sm:mx-auto lg:mx-auto px-0 lg:px-6 lg:pr-0 flex flex-col lg:flex-row">
+        <div class="w-full lg:w-1/2 order-2 lg:order-1 lg:pl-8 lg:pr-16 pt-8 lg:pt-16 py-12">
+          <!-- Mouse trailer div (unchanged) -->
+          <!-- mouse trailer div begin -->
+          <div class="w-full">
+            <!-- <div class="z-0 absolute"> -->
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+                <div class="circle invisible lg:visible  h-6 w-6 rounded-3xl bg-black absolute t-0 l-0"></div>
+            </div>
+
+            <!-- mouse trailer div end -->
+          
+          <div class="z-10 mx-6 md:mx-0">
+            <h3 class="text-[#cbfbf3] text-xl mb-4">The Most Flexible Research Program for High School and Gap-year Students</h3>
+            <h1 class="text-[#cbfbf3] text-4xl lg:text-5xl font-bold mb-4 lexend_deca">Passion Propels You Further</h1>
+            <p class="text-[#cbfbf3] mb-8">Get ahead on the competitive road to college with passion-fueled research opportunities</p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <button class="bg-teal-400 text-teal-800 px-6 py-3 rounded hover:bg-[#3a3680] hover:text-white hover:shadow-[5px_5px_0px_0px_rgba(110,231,183)] transition duration-300"><a href="./dynamerge.html">Apply to Dynamerge</a></button>
+              <button class="text-white flex items-center justify-center hover:bg-teal-400 hover:border hover:rounded-lg hover:px-3 hover:py-3 hover:text-teal-800 hover:border-teal-300 hover:shadow-[5px_5px_0px_0px_rgba(5,150,105)] transition duration-300">
+                <a href="./stepup.html">Apply to StepUp Scholar</a>  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w-full lg:w-1/2 order-1 lg:order-2 mb-8 lg:mb-0">
+          <img src="./img/img1.png" alt="Happy students" class="rounded-lg w-full h-auto">
+        </div>
+      </main>
+      <!-- jumbo end -->
+
+      <!-- why staija -->
+      <div class=" p-8 pt-0 min-h-dvh border border-t-2 border-r-0 border-l-0 border-b-2 border-[#5FDBE7]">
+        <div class="max-w-7xl mx-auto  star_bg">
+          <!-- the stars -->
+          <section class="relative w-full h-full">
+              
+
+              <h1 class="text-5xl text-[#17153B] pt-24 font-bold mb-16" style="-webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: rgb(191 219 254);">Why choose Staija?</h1>
+              
+              <div class="star star1 absolute top-0 left-0 w-full h-96 pointer-events-none"></div>
+              <div class="star star2 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+              <div class="star star3 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+              <div class="star star4 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+              <div class="star star5 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+              <div class="star star6 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+              <div class="star star7 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+              <div class="star star8 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+              <div class="star star9 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+              <div class="star star10 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+              <div class="star star11 absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-20 relative">
+                <!-- Cyan shape -->
+                <!-- <div class="absolute inset-0 bg-cyan-300 skew-y-6 transform origin-top-right rounded-full"></div> -->
+                <!-- <div class="invisible lg:visible overflow-auto absolute inset-0 bg-sky-200 -skew-y-3 transform origin-top-right rounded-lg "></div> -->
+                <!-- <div class="bg-repeat absolute inset-0 bg-[length:20px_20px]" style="background-image: url('img/no_bg/star.png'); background-position: 0 0, 10px 60px;"></div>         -->
+                <!-- Content columns -->
+                <div class="relative z-10 space-y-6">
+                  <h2 class="text-3xl font-semibold">A project that's one of a kind - like you</h2>
+                  <p class="text-xl pb-4">Polygence offers the most personalized mentored research experience - you choose the subject, research question and outcome of your project, so you can explore and create what you love.</p>
+                  <!-- <a href="#" class="text-blue-700 hover:underline text-xl font-medium">Explore past projects →</a> -->
+                </div>
+                
+                <div class="relative z-10 space-y-6">
+                  <h2 class="text-3xl font-semibold">The most flexible research program</h2>
+                  <p class="text-xl pb-4">High School Students are already busy with classes, extracurriculars and more - so we offer start dates throughout the year and allow students to set the pace that's right for them and their project.</p>
+                  <!-- <a href="#" class="text-blue-700 hover:underline text-md font-medium">See how it works →</a> -->
+                </div>
+                
+                <div class="relative z-10 space-y-6">
+                  <h2 class="text-3xl font-semibold">Tailored mentorship just for you</h2>
+                  <p class="text-xl pb-6">We ensure strong mentor-student fit by leveraging our extensive network of experts from top universities to match you with a mentor who shares your unique interests and passions.</p>
+                  <a href="./team.html" class="text-blue-700 hover:underline text-md font-medium">Meet our mentors →</a>
+                </div>
+              </div>
+        </section>
+        </div>
+      </div>
+
+      <!-- the right program -->
+      <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8 text-center">Find the right program for you</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Core Program -->
+          <div class="bg-teal-100 rounded-lg p-6 hover:-skew-y-3 hover:transform hover:origin-top-right">
+            <div class=" flex items-center justify-center mb-4">
+              <img src="img/no_bg/stem1.png" alt="Core Program" class="object-contain">
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Dynamerge</h2>
+            <p class="text-sm mb-4">
+              For High School students who want to turn their passion into a tangible outcome with the guidance of an expert mentor. You'll dive deep into a research topic of your choice over 10 one-on-one sessions.
+            </p>
+            <button class="bg-navy-600 hover:text-purple-400 text-white py-2 px-4 rounded-lg text-sm" >
+              <a href="./dynamerge.html">
+                Learn more about Dynamerge
+              </a>
+            </button>
+          </div>
+      
+          <!-- Launchpad -->
+          <div class="bg-blue-100 rounded-lg p-6 skew-y-3 transform origin-top-left  hover:skew-y-0 hover:origin-center">
+            <div class="flex items-center justify-center mb-4">
+              <img src="img/no_bg/stem3.png" alt="Launchpad" class="object-contain">
+            </div>
+            <h2 class="text-xl font-semibold mb-2">StepUp Scholar</h2>
+            <p class="text-sm mb-4">
+              For students who are unsure about what to study or weighing multiple options, this 3-session add-on to our Core program helps you find a topic that you'll love.
+            </p>
+            <button class="bg-navy-600 hover:text-purple-400 text-white py-2 px-4 rounded-lg text-sm">
+              <a href="./stepup.html">
+                Learn more about StepUp Scholar
+              </a>
+            </button>
+          </div>
+      
+          <!-- Premium Showcasing Support -->
+          <!-- <div class="bg-gray-700 text-white rounded-lg p-6">
+            <div class="h-40 flex items-center justify-center mb-4">
+              <img src="showcasing-icon.svg" alt="Premium Showcasing Support" class="h-32">
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Premium Showcasing Support</h2>
+            <p class="text-sm mb-4">
+              For students who are excited to publish, compete or otherwise spotlight their work, this 3-session add-on provides expert showcasing guidance.
+            </p>
+            <button class="bg-navy-600 text-white py-2 px-4 rounded-lg text-sm">
+              Learn more about Showcasing
+            </button>
+          </div> -->
+        </div>
+      </div>
+
+  </section>
+
+  <footer class=" text-white p-8 h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20">
+    <div class="container mx-auto ">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Logo and Contact -->
+        <div>
+          <button>
+            <div class="bg-gradient-to-r from-[#836CFA] w-20 to-[#5FDBE7] text-black rounded-full p-2 pl-[5%]  lg:pl-[5%] mb-6 mt-2 mr-2">
+             <a href="./index.html"> <span class="staija text-black md:pl-[10%]"> STAIJA</span></a>
+            
+            </div>
+         </button>
+          <p class="mb-2"><i class="fas fa-phone mr-2"></i> <a href="tel:+234 905 904 4516">+234 905 904 4516</a></p>
+          <p class="mb-4"><i class="fas fa-envelope mr-2"></i><a href="mailto:contact@staija.org">contact@staija.org</a></p>
+          <div class="flex space-x-4 mb-4">
+            <!-- fa-facebook-f -->
+            <!-- <div class="rounded-full h-8 w-8 border border-teal-400 flex items-center justify-center">
+              <a href="#" class="text-white hover:text-gray-300">
+                <i class="fa-brands fa-facebook-f fa-fade"></i>
+              </a>
+            </div> -->
+
+            <!-- fa-linkedin-in -->
+            <div class="rounded-full h-8 w-8 border border-teal-400 flex items-center justify-center">
+              <a href="https://www.linkedin.com/company/staija/" target="_blank" class="text-white hover:text-gray-300">
+                <i class="fa-brands fa-linkedin-in fa-bounce"></i>
+              </a>
+            </div> 
+
+            <!-- twitter -->
+            <!-- <div class="rounded-full h-8 w-8 border border-teal-400 flex items-center justify-center">
+              <a href="#" class="text-white hover:text-gray-300">
+                <i class="fa-brands fa-x-twitter fa-shake"></i>
+              </a>
+            </div>  -->
+
+            <!-- fa-instagram -->
+            <div class="rounded-full h-8 w-8 border border-teal-400 flex items-center justify-center">
+              <a href="https://www.instagram.com/staija_ng/" target="_blank" class="text-white hover:text-gray-300">
+                <i class="fa-brands fa-instagram fa-flip"></i>
+              </a>
+            </div> 
+
+            <!-- fa-youtube -->
+            <!-- <div class="rounded-full h-8 w-8 border border-teal-400 flex items-center justify-center">
+              <a href="#" class="text-white hover:text-gray-300">
+                <i class="fa-brands fa-youtube fa-beat-fade"></i>
+              </a>
+            </div>  -->
+            
+            
+           
+          </div>
+          <!-- <div class="flex space-x-4">
+            <a href="#" class="bg-black text-white px-3 py-1 rounded-md text-sm">Download on the App Store</a>
+            <a href="#" class="bg-black text-white px-3 py-1 rounded-md text-sm">GET IT ON Google Play</a>
+          </div> -->
+        </div>
+  
+        <!-- Programs -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Programs</h3>
+          <ul>
+            <li class="mb-2"><a href="./stepup.html" class="hover:underline">Step Up Scholar</a></li>
+            <li class="mb-2"><a href="./dynamerge.html" class="hover:underline">Dynamerge</a></li>
+          </ul>
+        </div>
+  
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">About</h3>
+          <ul>
+            <!-- <li class="mb-2"><a href="#" class="hover:underline">About Us</a></li> -->
+            <li class="mb-2"><a href="./team.html" class="hover:underline">Team</a></li>
+            <li class="mb-2"><a href="./intern.html" class="hover:underline">Careers</a></li>
+          </ul>
+        </div>
+  
+        <!-- Resources -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Resources</h3>
+          <ul>
+            <li class="mb-2"><a href="./partner.html" class="hover:underline">Partner With Us</a></li>
+            
+          </ul>
+        </div>
+      </div>
+  
+      <div class="mt-8 pt-8 border-t border-white/30 flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <a href="#" class="hover:underline mr-4">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms &#38 Conditions</a>
+        </div>
+        <div class="text-sm">
+          <p>&copy; 2024 Staija</p>
+          <p>We ❤️ our students and mentors!</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="main.js"></script>
+
+</html>

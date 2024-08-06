@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <!-- staija font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@900&family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+     <script src="cards.js"></script>
+     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<style>
+  .max-w-xs {
+      position: relative;
+  }
+  .slide-card {
+      height: 200px; /* Adjust this value as needed */
+      background-size: cover;
+      background-position: center;
+  }
+  button {
+      transition: opacity 0.3s ease;
+  }
+  button:hover {
+      opacity: 0.8;
+  }
+
+  .logo{
+    background-image: url('img/logo.jpg');
+  }
+
+  .staija{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-stroke: 0.1px #fff;
+}
+</style>
+
+<body class=" bg-gradient-to-b from-[#3a3680] via-purple-500 to-sky-500 lexend_deca relative">
+
+    <!-- header beginning  -->
+  <header class="transition-all sticky-header sticky duration-300 ease-in-out z-50 !bg-[#3a3680]/[75] text-white">
+    <div class="container mx-auto flex justify-between items-center py-0 px-0 transition-all duration-300 ease-in-out">
+      <div class="container mx-auto flex justify-between items-center py-4 px-6 border-b-2 border-emerald-500">
+        <!-- staija logo -->
+        <div class="bg-gradient-to-r from-[#836CFA] to-[#5FDBE7] text-black rounded-full p-2 mt-2 mr-2">
+          <a href="./index.html"> <span class="staija text-black md:pl-[10%] lg:pl-0"> STAIJA</span></a>
+        </div>
+        <nav>
+            <ul class="hidden lg:flex lg:space-x-6 lg:text-sm">
+                <li><a href="./dynamerge.html" class="hover:text-teal-400">STAIJA DYNAMERGE</a></li>
+                <li><a href="./stepup.html" class="hover:text-teal-400">STEPUP SCHOLAR</a></li>
+                <li><a href="./intern.html" class="hover:text-teal-400">INTERNSHIP</a></li>
+                <li><a href="./partner.html" class="hover:text-teal-400">PARTNER WITH US</a></li>
+            </ul>
+        </nav>
+        <div class="hidden lg:flex lg:space-x-4">
+          <button class="border border-teal-400 text-gray-400 px-4 py-1 rounded hover:bg-gray-600 hover:text-white hover:shadow-[5px_5px_0px_0px_rgba(110,231,183)] transition duration-300">LOGIN</button>
+          <button class="border border-teal-400 text-gray-400 px-4 py-1 rounded hover:bg-gray-600 hover:text-white hover:shadow-[5px_5px_0px_0px_rgba(110,231,183)] transition duration-300">JOIN US</button>
+        </div>
+        <!-- hamburger -->
+        <div class="lg:hidden">
+          <button class="navbar-burger">
+              <i class="fa fa-bars text-teal-400 px-4 py-1 rounded active:bg-gray-600 active:text-white active:shadow-[5px_5px_0px_0px_rgba(110,231,183)] transition duration-300"></i>
+          </button>
+        </div>
+  
+        <!-- sidebar small screen -->      
+        <div class="navbar-menu relative z-[70] hidden">
+          <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-gradient-135 from-sky-500 via-purple-500 to-[#3a3680] border-r overflow-y-auto">
+            <div class="flex items-center mb-7">
+              <a class="mr-auto text-lg font-bold leading-none" href="#">
+                <div class="bg-gradient-to-r from-[#836CFA] w-20 to-[#5FDBE7] text-black rounded-full p-2 mt-2 mr-2">
+                  <a href="./index.html"> <span class="staija text-black md:pl-[10%] lg:pl-0"> STAIJA</span></a>
+                </div>
+              </a>
+              <button class="navbar-close">
+                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul class="divide-y divide-emerald-300/25">
+                          <li class="mb-3 ">
+                              <div class="flex justify-center space-x-4 px-4 items-center">
+                                  <button class="border border-teal-400 text-gray-400 px-4 py-1 rounded  shadow-[5px_5px_0px_0px_rgba(45,212,191)] active:shadow-none transition duration-300">LOGIN</button>
+                                  <button class="border border-teal-400 text-gray-400 px-4 py-1 rounded  shadow-[5px_5px_0px_0px_rgba(45,212,191)] active:shadow-none transition duration-300">JOIN US</button>
+                                </div>
+                          </li>
+      
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded" href="./index.html">Home</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded" href="./dynamerge.html">Staija Dynamerge</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded" href="./stepup.html">StepUp Scholar</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded" href="./intern.html">Internship</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-200 hover:bg-blue-50 hover:text-blue-600 rounded" href="./partner.html">Partner With Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-auto">
+              <p class="my-4 text-xs text-center text-gray-400">
+                <span>Copyright &#169; 2024</span>
+              </p>
+            </div>
+          </nav>
+        </div>
+  
+    </div>
+    </div>
+  </header>
+  <!-- header end -->
+  
+  <section class="bg-main">
+
+      <!-- star -->
+      
+      <div class="star star1 3bsolbottom t63-0 left-0 w-full h-96 pointer-events-none"></div>
+      <div class="star star2 3bsolbottom t63-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star3 3bsolbottom t63-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star4 3bsolbottom t63-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star5 3bsolbottom t63-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star6 3bsolbottom t63-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star7 3bsolbottom t63-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star8 3bsolbottom t63-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star9 3bsolbottom t63-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star10 3bsolbottom t63-0 left-0 w-full h-full pointer-events-none"></div>
+      <div class="star star11 3bsolbottom t63-0 left-0 w-full h-full pointer-events-none"></div>
+
+      <!-- star end -->
+
+
+      <h1 class="text-5xl text-[#17153B] pt-8 font-bold mb-16 justify-center flex" style="-webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: rgb(191 219 254);">Meet the Team</h1>
+
+      <!-- the cards -->
+       <div class="card-swiper grid place-items-center min-h-[46vmax] md:min-h-[57vh] lg:min-h-[90vmin]">
+        
+        <div class="card-groups">
+              <!-- group1 -->
+            <div class="card-group" data-index="0" data-status="active">
+                <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                  
+                </div>
+
+                <div class="big-card card">
+
+                </div>
+
+                <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%]  left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                  
+                </div>
+
+                <div class="big-card card">
+                  
+                </div>
+
+                <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                  
+                </div>
+
+                <div class="big-card card">
+                  
+                </div>
+
+                <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                  
+                </div>
+                
+                <div class="big-card card">
+                  
+                </div>
+
+                
+
+                
+
+                
+
+                
+
+            </div>
+
+            <!-- group2 -->
+            <div class="card-group " data-index="1" data-status="unknown">
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%]  left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+                
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+                
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+              
+              <div class="big-card card">
+                
+              </div>
+
+              
+
+              
+
+              
+
+              
+
+            </div>
+
+          <!-- group3 -->
+          <div class="card-group " data-index="2" data-status="unknown">
+            <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+              
+            </div>
+
+            <div class="big-card card">
+
+            </div>
+
+            <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%]  left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+              
+            </div>
+
+            <div class="big-card card">
+              
+            </div>
+
+            <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+              
+            </div>
+
+            <div class="big-card card">
+              
+            </div>
+
+            <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+              
+            </div>
+            
+            <div class="big-card card">
+              
+            </div>
+
+            
+
+            
+
+            
+
+            
+
+            </div>
+
+            <!-- group4 -->
+            <div class="card-group " data-index="3" data-status="unknown">
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%]  left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+                
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+                
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+              
+              <div class="big-card card">
+                
+              </div>
+
+              
+
+              
+
+              
+
+              
+
+            </div>
+
+            <!-- group5 -->
+            <div class="card-group " data-index="4" data-status="unknown">
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%]  left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+                
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+                
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+              
+              <div class="big-card card">
+                
+              </div>
+
+              
+
+              
+
+              
+
+              
+
+          </div>
+
+            <!-- group6 -->
+            <div class="card-group " data-index="5" data-status="unknown">
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%]  left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+                
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+                
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+              
+              <div class="big-card card">
+                
+              </div>
+
+              
+
+              
+
+              
+
+              
+
+          </div>
+
+          <!-- group7 -->
+          <div class="card-group " data-index="6" data-status="unknown">
+            <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+              
+            </div>
+
+            <div class="big-card card">
+
+            </div>
+
+            <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%]  left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+              
+            </div>
+
+            <div class="big-card card">
+              
+            </div>
+
+            <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+              
+            </div>
+
+            <div class="big-card card">
+              
+            </div>
+
+            <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+              
+            </div>
+            
+            <div class="big-card card">
+              
+            </div>
+
+            
+
+            
+
+            
+
+            
+
+          </div>
+
+            <!-- group8 -->
+            <div class="card-group " data-index="7" data-status="unknown">
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%]  left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+                
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+
+              <div class="big-card card">
+                
+              </div>
+
+              <div class="little-card card top-[29.7%] md:top-[46%] lg:top-[47%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]">
+                
+              </div>
+              
+              <div class="big-card card">
+                
+              </div>
+
+              
+
+              
+
+              
+
+              
+
+          </div>
+
+          </div>
+
+
+
+
+            <!-- buttons -->
+            <!-- <div class="card-swiper-buttons mt-2 lg:mt-10 grid grid-cols-2 w-[40vmin] lg:w-[80vmin] px-4 ">
+              <button id="left-btn flex items-center justify-center " @click="prev()" onclick="handleLeftClick()" >
+                <i @click="prev()" class="fa-solid fa-angles-left  text-gray-200 text-lg md:text-2xl rounded-full h-9 w-9 md:h-12 md:w-12 py-2 pr-[4px] pl-[3px]  md:py-3 bg-transparent border border-emerald-500"></i>
+              </button>
+              <button id="right-btn " onclick="handleRightClick()">
+                <i class="fa-solid fa-angles-right text-gray-200 text-lg md:text-2xl rounded-full h-9 w-9 md:h-12 md:w-12 py-2 pr-[4px] pl-[3px]  md:py-3  bg-transparent border border-emerald-500"></i>
+              </button>
+            </div> -->
+
+
+      </div>
+
+      <!-- card info -->
+      <!-- <div class="card-swiper grid place-items-center min-h-[46vmax] md:min-h-[57vh] lg:min-h-[90vmin] "> -->
+        <div x-data="carousel()" class="max-w-xs mx-auto relative">
+          <div class="relative overflow-hidden">
+              <div class="flex transition-transform duration-300 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+                  <template x-for="(card, index) in cards" :key="index">
+                      <div class="w-full flex-shrink-0 p-4">
+                          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                              <div 
+                                  class="slide-card justify-center items-center bg-center flex flex-1 w-[90vmin] md:w-[40vmin] lg:w-[100vmin]" 
+                                  :style="`background-image: url('${card.image}')`;"
+                              ></div>
+                              <div class="p-4">
+                                  <h3 x-text="card.title" class="text-xl font-semibold mb-2"></h3>
+                                  <p x-text="card.description" class="text-gray-600"></p>
+                              </div>
+                          </div>
+                      </div>
+                  </template>
+              </div>
+          </div>
+          
+          <!-- Repositioned buttons -->
+          <button @click="prev()" class="slide-btn absolute -left-1 md:-left-2.5 top-1/2 transform -translate-y-1/2 z-10">
+              <i class="fa-solid fa-angles-left text-gray-200 hover:text-slate-600 active:text-white text-lg md:text-2xl pt-[25%] md:pt-[20%] rounded-full h-9 w-9 md:h-12 md:w-12 flex items-center justify-center bg-zinc-400 focus:bg-zinc-200 opacity-55 hover:opacity-90 active:opacity-100 border focus:border-teal-500 border-emerald-500/[50]"></i>
+          </button>
+          <button @click="next()" class="slide-btn absolute -right-1 md:-right-2.5 top-1/2 transform -translate-y-1/2 z-10">
+              <i class="fa-solid fa-angles-right text-gray-200 hover:text-slate-600 active:text-white text-lg md:text-2xl pt-[25%] md:pt-[20%] rounded-full h-9 w-9 md:h-12 md:w-12 flex items-center justify-center bg-zinc-400 focus:bg-zinc-200 opacity-55 hover:opacity-90 active:opacity-100 border focus:border-teal-500 border-emerald-500/[50]"></i>
+          </button>
+      </div>
+  
+      
+      
+      <!-- </div> -->
+      
+
+      
+
+      
+
+      
+  </section>
+
+  <footer class=" text-white p-8 h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20">
+    <div class="container mx-auto ">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Logo and Contact -->
+        <div>
+          <button>
+            <div class="bg-gradient-to-r from-[#836CFA] w-20 to-[#5FDBE7] text-black rounded-full p-2 pl-[5%]  lg:pl-[5%] mb-6 mt-2 mr-2">
+             <a href="./index.html"> <span class="staija text-black md:pl-[10%]"> STAIJA</span></a>
+            
+            </div>
+         </button>
+          <p class="mb-2"><i class="fas fa-phone mr-2"></i> <a href="tel:+234 905 904 4516">+234 905 904 4516</a></p>
+          <p class="mb-4"><i class="fas fa-envelope mr-2"></i><a href="mailto:contact@staija.org">contact@staija.org</a></p>
+          <div class="flex space-x-4 mb-4">
+            <!-- fa-facebook-f -->
+            <!-- <div class="rounded-full h-8 w-8 border border-teal-400 flex items-center justify-center">
+              <a href="#" class="text-white hover:text-gray-300">
+                <i class="fa-brands fa-facebook-f fa-fade"></i>
+              </a>
+            </div> -->
+
+            <!-- fa-linkedin-in -->
+            <div class="rounded-full h-8 w-8 border border-teal-400 flex items-center justify-center">
+              <a href="https://www.linkedin.com/company/staija/" target="_blank" class="text-white hover:text-gray-300">
+                <i class="fa-brands fa-linkedin-in fa-bounce"></i>
+              </a>
+            </div> 
+
+            <!-- twitter -->
+            <!-- <div class="rounded-full h-8 w-8 border border-teal-400 flex items-center justify-center">
+              <a href="#" class="text-white hover:text-gray-300">
+                <i class="fa-brands fa-x-twitter fa-shake"></i>
+              </a>
+            </div>  -->
+
+            <!-- fa-instagram -->
+            <div class="rounded-full h-8 w-8 border border-teal-400 flex items-center justify-center">
+              <a href="https://www.instagram.com/staija_ng/" target="_blank" class="text-white hover:text-gray-300">
+                <i class="fa-brands fa-instagram fa-flip"></i>
+              </a>
+            </div> 
+
+            <!-- fa-youtube -->
+            <!-- <div class="rounded-full h-8 w-8 border border-teal-400 flex items-center justify-center">
+              <a href="#" class="text-white hover:text-gray-300">
+                <i class="fa-brands fa-youtube fa-beat-fade"></i>
+              </a>
+            </div>  -->
+            
+            
+           
+          </div>
+          <!-- <div class="flex space-x-4">
+            <a href="#" class="bg-black text-white px-3 py-1 rounded-md text-sm">Download on the App Store</a>
+            <a href="#" class="bg-black text-white px-3 py-1 rounded-md text-sm">GET IT ON Google Play</a>
+          </div> -->
+        </div>
+  
+        <!-- Programs -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Programs</h3>
+          <ul>
+            <li class="mb-2"><a href="./stepup.html" class="hover:underline">Step Up Scholar</a></li>
+            <li class="mb-2"><a href="./dynamerge.html" class="hover:underline">Dynamerge</a></li>
+          </ul>
+        </div>
+  
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">About</h3>
+          <ul>
+            <!-- <li class="mb-2"><a href="#" class="hover:underline">About Us</a></li> -->
+            <li class="mb-2"><a href="./team.html" class="hover:underline">Team</a></li>
+            <li class="mb-2"><a href="./intern.html" class="hover:underline">Careers</a></li>
+          </ul>
+        </div>
+  
+        <!-- Resources -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Resources</h3>
+          <ul>
+            <li class="mb-2"><a href="./partner.html" class="hover:underline">Partner With Us</a></li>
+            
+          </ul>
+        </div>
+      </div>
+  
+      <div class="mt-8 pt-8 border-t border-white/30 flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <a href="#" class="hover:underline mr-4">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms &#38 Conditions</a>
+        </div>
+        <div class="text-sm">
+          <p>&copy; 2024 Staija</p>
+          <p>We ❤️ our students and mentors!</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<!-- <script src="//unpkg.com/alpinejs" defer></script> -->
+<script src="main.js"></script>
+<script>
+  
+</script>
+
+</html>
